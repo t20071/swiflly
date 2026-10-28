@@ -28,9 +28,9 @@
   <div class="card">
     <strong>In short:</strong> Swiflly turns your speech into text entirely on your own computer.
     It never saves audio and does not collect any personal data. What you dictate is not stored; text is
-    saved only if you start meeting notes or save a transcript, and then only on your PC. The writing tools
-    and recording transcription also run on your PC. Swiflly uses the internet only to download a model
-    you choose.
+    saved only if you start meeting notes or save a transcript, and then only on your PC. Translation,
+    clean-up, the writing tools and recording transcription also run on your PC. Swiflly uses the internet
+    only to download a model you choose.
   </div>
 
   <h2>What Swiflly does</h2>
@@ -44,10 +44,25 @@
       Your audio is never sent to us or to anyone else.</li>
     <li><strong>Never saved.</strong> Audio is held in memory only while you are dictating and is
       discarded as soon as the text has been typed. It is never written to disk.</li>
-    <li><strong>Text is not stored.</strong> Swiflly does not keep a history of what you dictate.
+    <li><strong>Text is not stored.</strong> Swiflly does not save what you dictate.
       The text is placed on the Windows clipboard for a moment so it can be pasted, and your previous
       clipboard text is then restored.</li>
+    <li><strong>Recent dictations stay in memory.</strong> If "Recent dictations" is on (Dictation page), your
+      last 10 dictations are kept in memory so you can copy one again from Swiflly's tray menu. They are never
+      written to disk and are gone when Swiflly closes. You can clear the list or turn it off at any time.</li>
   </ul>
+
+  <h2>Translation, clean-up and styles</h2>
+  <p>Typing another language in English, Hinglish (Hindi in English letters), leaving out filler words like
+  "um", the voice commands "new line", "new paragraph" and "scratch that", and the Polished and Formal styles
+  all happen on your PC. The Polished and Formal styles use the writing model on your PC. Nothing is sent
+  anywhere.</p>
+
+  <h2>Snippets and app settings</h2>
+  <p>Snippets you create (a phrase and the text it types) and the languages and styles you choose for
+  particular apps are saved in Swiflly's settings on your PC. To apply an app's settings, Swiflly checks
+  which program is in front when you start dictating (for example "whatsapp.exe"); it does not read that
+  program's windows or content.</p>
 
   <h2>Meeting notes (optional)</h2>
   <ul>
@@ -86,7 +101,8 @@
   Win+Alt for meeting notes; you can change them), and Esc and Enter while it is listening. It does not record, store or send
   anything you type. When your dictated text is ready, Swiflly asks Windows whether the focused item accepts
   text, so it can keep the text on the clipboard if it may not have arrived; this check does not read the
-  content of anything. The writing tools read only the text you select, and only when you press their shortcut.</p>
+  content of anything. The writing tools read only the text you select, and only when you press their shortcut.
+  To type, Swiflly sends Ctrl+V; when you say "scratch that", it sends Ctrl+Z to undo its last dictation.</p>
 
   <h2>Internet and data collection</h2>
   <ul>
@@ -100,13 +116,19 @@
       Instruct) from Hugging Face the same way. After that, the writing tools also work offline.</li>
     <li>"Send feedback" opens a new email to us in your email app, or in Gmail in your browser if no
       email app is set up. Nothing is attached or sent automatically: you write and send it yourself.</li>
+    <li>"Copy diagnostic info" (About page) copies technical details to your clipboard only: Windows version,
+      processor, memory, microphone name, Swiflly's settings and its technical log, with your Windows user name
+      taken out. Nothing is sent unless you paste it into an email yourself.</li>
+    <li>"Rate Swiflly", and once after 20 dictations, shows the Microsoft Store's own rating box. A rating or
+      review you choose to give goes to Microsoft under the Microsoft Privacy Statement.</li>
     <li>There is no account, no sign-in, no analytics, no advertising and no tracking.</li>
     <li>We do not collect, sell or share any personal information.</li>
   </ul>
 
   <h2>Data stored on your PC</h2>
-  <p>Swiflly keeps a few files in your Windows user profile: your settings, your optional list of
-  custom words, any speech models you downloaded or added (you can remove them in the Languages
+  <p>Swiflly keeps a few files in your Windows user profile: your settings (including your snippets, app
+  settings and a count of your dictations, which is a number only, used to offer the rating box once), your
+  optional list of custom words, any speech models you downloaded or added (you can remove them in the Languages
   window), the writing model if you downloaded it (removable in the Writing tools window), and a technical log of up to 1 MB (start-up and error messages, never audio and never the
   words you dictate). Uninstalling Swiflly removes them all. Meeting notes you chose to take, and
   transcripts you chose to save, stay where they were saved until you delete them.</p>
