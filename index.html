@@ -23,13 +23,14 @@
 <body>
 <main>
   <h1>Swiflly Privacy Policy</h1>
-  <p class="muted">Last updated: 26 October 2026</p>
+  <p class="muted">Last updated: 28 October 2026</p>
 
   <div class="card">
     <strong>In short:</strong> Swiflly turns your speech into text entirely on your own computer.
     It never saves audio and does not collect any personal data. What you dictate is not stored; text is
-    saved only if you start meeting notes, and then only on your PC. Swiflly uses the internet only to
-    download a speech model you choose.
+    saved only if you start meeting notes or save a transcript, and then only on your PC. The writing tools
+    and recording transcription also run on your PC. Swiflly uses the internet only to download a model
+    you choose.
   </div>
 
   <h2>What Swiflly does</h2>
@@ -63,6 +64,18 @@
       that service's own privacy policy applies.</li>
   </ul>
 
+  <h2>Writing tools (optional)</h2>
+  <p>If you select text in an app and press Win+Alt+T (improve the English) or Win+Alt+P (turn it into a
+  prompt for an AI assistant), Swiflly copies the selected text, rewrites it with a small language model
+  that runs on your PC, and pastes the result over your selection. The text is never sent anywhere and is
+  not kept: it lives in memory only while it is rewritten. Your clipboard is put back as it was.</p>
+
+  <h2>Transcribing a recording (optional)</h2>
+  <p>If you choose a recording in Swiflly's Transcribe page, Swiflly reads that file on your PC and turns
+  its speech into text. The file is never uploaded, copied or changed, and its audio is discarded as soon
+  as each part is transcribed. The text appears in the window; it is written to disk only if you click
+  "Save as .txt" and choose where to save it.</p>
+
   <h2>Microphone</h2>
   <p>Swiflly uses the microphone only between your two Ctrl+Win presses, and during meeting notes you
   start. Windows shows its microphone indicator while Swiflly is listening. You can turn microphone access off at any time in
@@ -71,8 +84,9 @@
   <h2>Keyboard</h2>
   <p>To detect its shortcuts in every app, Swiflly listens for key presses. It only reacts to its two shortcuts (by default Ctrl+Win and
   Win+Alt for meeting notes; you can change them), and Esc and Enter while it is listening. It does not record, store or send
-  anything you type. Before listening, Swiflly asks Windows whether the selected item accepts text, so it
-  can tell you to click in a text box first; it does not read the content of what you have selected.</p>
+  anything you type. When your dictated text is ready, Swiflly asks Windows whether the focused item accepts
+  text, so it can keep the text on the clipboard if it may not have arrived; this check does not read the
+  content of anything. The writing tools read only the text you select, and only when you press their shortcut.</p>
 
   <h2>Internet and data collection</h2>
   <ul>
@@ -82,6 +96,10 @@
       voice or your text is sent. After that, the language also works offline.</li>
     <li>If you add your own model from a Hugging Face link, Swiflly downloads that file the same way.
       A model you add from your PC is simply copied into Swiflly's folder.</li>
+    <li>If you choose to use the writing tools, Swiflly downloads their language model (Qwen2.5 1.5B
+      Instruct) from Hugging Face the same way. After that, the writing tools also work offline.</li>
+    <li>"Send feedback" opens a new email to us in your email app, or in Gmail in your browser if no
+      email app is set up. Nothing is attached or sent automatically: you write and send it yourself.</li>
     <li>There is no account, no sign-in, no analytics, no advertising and no tracking.</li>
     <li>We do not collect, sell or share any personal information.</li>
   </ul>
@@ -89,9 +107,9 @@
   <h2>Data stored on your PC</h2>
   <p>Swiflly keeps a few files in your Windows user profile: your settings, your optional list of
   custom words, any speech models you downloaded or added (you can remove them in the Languages
-  window), and a technical log of up to 1 MB (start-up and error messages, never audio and never the
-  words you dictate). Uninstalling Swiflly removes them all. Meeting notes you chose to save stay in
-  your Documents folder until you delete them.</p>
+  window), the writing model if you downloaded it (removable in the Writing tools window), and a technical log of up to 1 MB (start-up and error messages, never audio and never the
+  words you dictate). Uninstalling Swiflly removes them all. Meeting notes you chose to take, and
+  transcripts you chose to save, stay where they were saved until you delete them.</p>
 
   <h2>Purchases</h2>
   <p>Swiflly is sold through the Microsoft Store. The free week and your yearly subscription are handled by
